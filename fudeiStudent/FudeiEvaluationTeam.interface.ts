@@ -1,0 +1,31 @@
+export interface IFudeiEvaluationteam {
+	anamnesis: boolean;
+	code_register: string;
+	codeRegister: string;
+	diagnosis: boolean;
+	dni: string;
+	email: string;
+	evaluation_date: string;
+	evaluationDate: string;
+	fullname: string;
+	health_exams: boolean;
+	health_report: boolean;
+	healthExams: boolean;
+	healthReport: boolean;
+	interview_whom: string;
+	interview: boolean;
+	interviewWhom: string;
+	observation: boolean;
+	other_report: boolean;
+	otherReport: boolean;
+	phone: string;
+	procedures: boolean;
+	required: boolean;
+	school_report: boolean;
+	schoolReport: boolean;
+	specialty: string;
+	specify_other: string;
+	specify_procedures: string;
+	specifyOther: string;
+	specifyProcedures: string;
+}

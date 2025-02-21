@@ -1,0 +1,43 @@
+import { IFudeiEvaluationteam } from './FudeiEvaluationTeam.interface';
+import { IFudeiMemberId } from './FudeiMemberId.interface';
+import { IFudeiSignature } from './FudeiSignatures.interface';
+import { IFudeiSummarydiagnosis } from './FudeiSummaryDiagnosis.interface';
+import { IFudeiEducationalNeeds } from './IFudeiEducationalNeeds.interface';
+import { IFudeiSchool } from './IFudeiSchool.interface';
+import { IFudeiStudentData } from './IFudeiStudents.interface';
+
+export interface IFudeiMain {
+	Id: string;
+	active: boolean;
+	anamnesisDetails: string;
+	deafCoeducator: boolean;
+	educationalNeeds: IFudeiEducationalNeeds;
+	evaluationTeam: IFudeiEvaluationteam[];
+	familyHindersLearning: string[];
+	familyPromotesLearning: string[];
+	kinesiologist: boolean;
+	link: string;
+	memberId: IFudeiMemberId;
+	notSpanish: string;
+	observation: string;
+	occupationalTherapist: boolean;
+	otherProfession: string;
+	otherProfessional: boolean;
+	personalStrength: string;
+	psychoeducationalAssessment: string;
+	psychologist: boolean;
+	psychopedagogue: boolean;
+	school: IFudeiSchool;
+	schoolHindersLearning: string[];
+	schoolPromotesLearning: string[];
+	signInterpreter: boolean;
+	specialTeacher: string;
+	specialTeacherMention: string;
+	speechTherapist: boolean;
+	student: IFudeiStudentData;
+	subjects: string;
+	subjectTeacher: string;
+	summaryDiagnosis: IFudeiSummarydiagnosis;
+	signatures: IFudeiSignature;
+	year: number;
+}
